@@ -17,17 +17,11 @@ import (
 )
 
 func main() {
-	// gin.SetMode(gin.ReleaseMode)
 	godotenv.Load()
 	serverHost := os.Getenv("SERVER_ADDRESS")
 	serverPort := os.Getenv("PORT")
 	serverString := fmt.Sprintf("%s:%s", serverHost, serverPort)
 	r := gin.Default()
-	// client, err := infrastructure.CreateClient(ctx)
-	// if err != nil {
-	// 	panic("Cannot create client firestore: " + err.Error())
-	// }
-	// defer client.Close()
 
 	dbUrl := os.Getenv("DB_URL")
 
