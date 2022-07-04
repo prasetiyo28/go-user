@@ -1,1 +1,1 @@
-web: bin\go-user
+web: bin/go-user
